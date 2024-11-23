@@ -1,0 +1,9 @@
+global:
+  scrape_interval: 15s # Default scrape interval for all jobs
+  evaluation_interval: 15s # Default evaluation interval for all rules
+
+scrape_configs:
+  - job_name: 'go_todo_app'
+    scrape_interval: 5s # Override the default scrape interval for this job
+    static_configs:
+      - targets: ['localhost:2112']
