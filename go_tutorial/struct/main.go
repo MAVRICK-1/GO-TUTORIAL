@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"structs"
 	"time"
 )
 
@@ -62,5 +63,16 @@ func main(){
 	order2.TimeStamp()
 	fmt.Println(order2.GetStatus())
 	fmt.Println(*order2)
+
+
+	// inlining struct
+	language := struct{
+		Name string
+		Version float64
+	}{
+		Name: "Go",
+		Version: 1.15,
+	}
+	fmt.Println(language)
 
 }
