@@ -10,7 +10,7 @@ func add(nums ...int) int {
 	return sum
 }
 
-func interface_func(val ...interface{}) {
+func interface_func(val ...interface{}) { // interface{} is a type that can hold values of any type
 	for _, v := range val {
 		fmt.Println(v)
 	}
